@@ -1,0 +1,22 @@
+package observerHeadFirst;
+
+public class CurrentConditionsDisplay implements DisplayElement, Observer {
+	
+	
+	private float temperature;
+	private float humidity;
+	private Subject weatherData;
+
+	@Override
+	public void update(float temp, float humdity, float presssure) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

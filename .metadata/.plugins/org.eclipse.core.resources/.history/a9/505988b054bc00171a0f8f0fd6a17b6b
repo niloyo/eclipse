@@ -1,0 +1,34 @@
+package nilmadhab;
+
+import java.util.Random;
+
+public class Philosopher implements Runnable {
+	
+	private int id;
+	private ChopStick leftChopStick;
+	private ChopStick rightChopStick;
+	
+	private volatile Boolean isFull = false;
+	
+	private Random random;
+	
+	private int eatingCounter;
+
+	public Philosopher(int id, ChopStick leftChopStick, ChopStick rightChopStick) {
+		super();
+		this.id = id;
+		this.leftChopStick = leftChopStick;
+		this.rightChopStick = rightChopStick;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+
+}

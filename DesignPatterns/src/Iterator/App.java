@@ -1,0 +1,29 @@
+package Iterator;
+
+import java.util.ArrayList;
+
+public class App {
+	
+	
+		
+	public static void main(String[] args) {
+		PanCakeHouseMenu panCakeHouseMenu = new PanCakeHouseMenu();
+		
+		DinerMenu dinerMenu = new DinerMenu();
+
+		
+		Waitress waitress = new Waitress(panCakeHouseMenu, dinerMenu);
+		
+		waitress.printMenu(panCakeHouseMenu.createIterator());
+		
+		System.out.println();
+		
+		waitress.printMenu(dinerMenu.createIterator());
+		
+		
+		
+		
+			
+	}
+
+}

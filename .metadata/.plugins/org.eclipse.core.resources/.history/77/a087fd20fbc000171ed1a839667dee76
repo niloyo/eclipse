@@ -1,0 +1,20 @@
+package Duck;
+
+public abstract class Duck {
+	
+	FlyBehaviour flyBehaviour;
+	QuackBehaviour quackBehaviour;
+	
+	public  Duck() {
+		
+	}
+	
+	public void performFly() {
+		
+	}
+	
+	public void performQuack() {
+		
+	}
+
+}

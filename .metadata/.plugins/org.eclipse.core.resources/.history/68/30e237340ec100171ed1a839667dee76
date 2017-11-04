@@ -1,0 +1,5 @@
+package observerHeadFirst;
+
+public interface Subject {
+
+}

@@ -1,0 +1,37 @@
+package observerHeadFirst;
+
+import java.util.ArrayList;
+
+public class WeatherData implements Subject {
+	
+	private ArrayList<Observer> observers;
+	
+	private float temperature;
+	private float humidity;
+	private float pressure;
+	
+
+	public WeatherData() {
+		super();
+		this.observers = new ArrayList<>();;
+	}
+
+	@Override
+	public void registerObserver(Observer o) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void removeObserver(Observer o) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void notifyObservers() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

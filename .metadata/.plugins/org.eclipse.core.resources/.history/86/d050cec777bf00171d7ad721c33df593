@@ -1,0 +1,15 @@
+package Iterator;
+
+import java.util.ArrayList;
+
+public class App {
+	
+	PanCakeHouseMenu panCakeHouseMenu = new PanCakeHouseMenu();
+	
+	DinerMenu dinerMenu = new DinerMenu();
+	
+	ArrayList<MenuItem> panMenu = panCakeHouseMenu.getMenuItems();
+	
+	for(MenuItem menu : panMe)
+
+}

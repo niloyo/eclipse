@@ -1,0 +1,53 @@
+package CountDownLatch;
+
+import java.util.Random;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class App {
+	public static void main(String[] args) throws InterruptedException {
+		ExecutorService executorService = Executors.newSingleThreadExecutor();
+		CountDownLatch latch = new CountDownLatch(5);
+		for (int i = 0; i < 5; i++) {
+			Worker worker = new Worker(i+1, latch);
+			executorService.execute(worker);
+		}
+		
+		latch.await();
+		
+		System.out.println("All the prerequisites are done..... ");
+	}
+}
+
+class Worker implements Runnable{
+	
+	private int id;
+	private CountDownLatch countDownLatch;
+	private Random random;
+
+	public Worker(int id, CountDownLatch countDownLatch) {
+		super();
+		this.id = id;
+		this.countDownLatch = countDownLatch;
+		//this.random = random;
+	}
+
+	@Override
+	public void run() {
+		doWork();
+		countDownLatch.countDown();
+		
+	}
+
+	private void doWork() {
+		System.out.println("Thread with ID "+ id + " starts worling .." );
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+}

@@ -1,0 +1,25 @@
+package observerHeadFirst;
+
+public class CurrentConditionsDisplay implements DisplayElement, Observer {
+	
+	
+	private float temperature;
+	private float humidity;
+	private Subject weatherData;
+
+	@Override
+	public void update(float temp, float humdity, float presssure) {
+		temperature = temp;
+		this.humidity = humdity;
+		display();
+
+	}
+
+	@Override
+	public void display() {
+        System.out.println("Current conditions " + temperature +
+        			" F degrees and humidity " + humidity + " % humidity");
+
+	}
+
+}

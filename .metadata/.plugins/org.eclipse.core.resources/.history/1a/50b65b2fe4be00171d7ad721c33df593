@@ -1,0 +1,9 @@
+package ObserverPattern;
+
+public interface Subject {
+	
+	public void registerObserver(Observer observer);
+	public void remnoveObserver(Observer observer);
+	public void notifyObserver();
+
+}

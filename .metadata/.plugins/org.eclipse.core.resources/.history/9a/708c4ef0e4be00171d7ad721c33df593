@@ -1,0 +1,11 @@
+package ObserverPattern;
+
+public class Follower implements Observer {
+
+	@Override
+	public void update(String status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

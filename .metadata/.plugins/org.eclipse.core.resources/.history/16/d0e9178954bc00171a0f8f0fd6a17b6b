@@ -1,0 +1,17 @@
+package nilmadhab;
+
+import java.util.Random;
+
+public class Philosopher {
+	
+	private int id;
+	private ChopStick leftChopStick;
+	private ChopStick rightChopStick;
+	
+	private Random random;
+	
+	private int eatCounter;
+	
+	
+
+}

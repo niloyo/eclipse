@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MultiThreading/src/synchronizedExample.java&apos; to &apos;SynchronizedExample.java&apos;" description="Rename resource &apos;synchronizedExample.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/synchronizedExample.java" name="SynchronizedExample.java" stamp="1508685966626" updateReferences="true"/>
+</session>

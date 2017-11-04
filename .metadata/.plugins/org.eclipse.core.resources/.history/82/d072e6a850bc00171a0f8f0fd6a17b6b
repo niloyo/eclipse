@@ -1,0 +1,12 @@
+package nilmadhab;
+
+public class Constants {
+	
+	private Constants() {
+		
+	}
+	
+	public static final int NUMBER_PHILOSOPHER =5;
+	
+
+}

@@ -1,0 +1,17 @@
+package CountDownLatch;
+
+public class App {
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Worker implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

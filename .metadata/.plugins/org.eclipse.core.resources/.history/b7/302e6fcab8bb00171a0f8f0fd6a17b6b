@@ -1,0 +1,14 @@
+
+public class OldCoffeeMachine {
+	
+	CoffeeTouchscreenAdapter coffeeTouchscreenAdapter = new CoffeeTouchscreenAdapter();
+	
+	void selectA() {
+		
+	}
+	
+	void selectB() {
+		
+	}
+
+}

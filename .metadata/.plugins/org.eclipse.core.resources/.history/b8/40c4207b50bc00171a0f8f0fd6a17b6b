@@ -1,0 +1,9 @@
+package nilmadhab;
+
+public class Constants {
+	
+	private Constants() {
+		
+	}
+
+}
